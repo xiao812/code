@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1360</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1360</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OpenCameraBtn">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CloseCameraBtn">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>结束</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SaveVideoBtn">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>保存</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OpenVideoBtn">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>回放</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CutPictureBtn">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>截图</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(227, 227, 227);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>50</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(227, 227, 227);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>530</y>
+      <width>342</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 153, 153);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>342</x>
+      <y>530</y>
+      <width>342</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 153, 153);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>530</y>
+      <width>342</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 153, 153);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>530</y>
+      <width>342</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 153, 153);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="horizontalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>740</y>
+      <width>1368</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1360</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
