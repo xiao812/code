@@ -73,3 +73,11 @@ vpath 清除所有已被设置好了的文件搜索目录。
     subsystem:
     $(MAKE) -C subdir
 ```
+
+### 关键字
+    wailcard 
+    override
+    define
+
+### 目标变量 
+### 模式变量
