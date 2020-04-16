@@ -80,4 +80,85 @@ vpath 清除所有已被设置好了的文件搜索目录。
     define
 
 ### 目标变量 
+
 ### 模式变量
+
+### 条件判断
+```
+    <conditional-directive>
+    <text-if-true>
+    endif 
+    或
+    <conditional-directive>
+    <text-if-true>
+    else 
+    <text-if-true>
+    endif
+```
+ifeq ifneq  ifdef  ifndef 
+
+### 使用函数
+语法:
+```
+    $(<function> <arguments>)
+    或 
+    ${<function> <arguments>}
+```
+```
+    subst       字符替换函数
+    $(subst <from>,<to>,<text>)
+    patsubst    模式字符串替换函数 
+    $(patsubst <pattern>,<replacement>,<text>)  
+    strip       去空格函数 
+    $(strip a b c)
+    fidstring   查找字符串函数
+    $(finstring <find>,<in>)
+    filter      过滤函数 
+    $(filter <pattern...>,<text>)
+    filter-out  反过滤函数 
+    #(filter-out <pattern...>,<text>)
+    sort        排序函数 
+    $(sort <list>)
+    word        取单词函数 
+    $(word <n>, <text>)
+    wordlist    取单词串函数 
+    $(wordlist <ss>,<e>,<text>)
+    words       单词个数统计函数 
+    $(words <text>)
+    firstword   首单词函数 
+    $(firstword <text>)
+    dir         取目录函数 
+    $(dir <names...>)
+    notdir      取文件函数 
+    $(notdir <names...>)
+    suffix      取后缀函数 
+    $(sufffix <names...>)
+    basename    取前缀函数 
+    $(basename <namems...>)
+    addsuffix   加后缀函数 
+    $(addsuffix <suffix>,<names...>)
+    addprefix   加前缀函数 
+    $(addprefix <prefix>,<anmes...>)
+    join        连接函数 
+    $(join <list1>, <list2>)
+    foreach     
+    $(foreach <var>,<list>,<text>)
+    if 
+    $(if <condition>, <then-part>)
+    $(if <condition>, <then-part>, <else-part>)
+    call函数
+    $(call <expression>,<parm1>,<parm2>,...,<parmn>)
+    origin 函数 
+    $(origin <variable>)
+    shell 函数 
+    $(error <text ...>)
+```
+
+### 自动化变量
+$@ : 表示规则中的目标文件集
+$% : 仅当目标是函数库文件中，表示规则中的目标成员名。
+$< : 依赖目标中的第一个目标名字。
+$? : 所有比目标新的依赖目标的集合。
+$^ : 所有的依赖目标的集合。
+$+ : 这个变量很像$^ ，也是所有依赖目标的集合。只是它不去除重复的依赖目标、
+$* : 这个变量表示目标模式中% 及其之前的部分。
